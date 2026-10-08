@@ -28,6 +28,13 @@
     background-color: var(--primary-color);
     color: #fff;
 }
+.subtitle-box {
+    font-size: 1rem;
+    color: #94a3b8;
+    line-height: 1.5;
+    margin-top: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Usamos fuente normal en vez de monoespaciado para que se vea más profesional */
+}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--bg-color);
@@ -192,13 +199,25 @@ h2 {
     right: 10px;
 }
 
-/* Para pantallas medianas y grandes (PCs y tablets), recuperamos la animación de escritura fluida */
+/* Para tablets y pantallas medianas (a partir de 600px) */
+@media (min-width: 600px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+    
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en tablets */
+    }
+}
 @media (min-width: 768px) {
     .typing-text {
         font-size: 1.2rem;
         white-space: nowrap; /* En PC vuelve a ser una sola línea animada */
         width: fit-content;
         animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+        .subtitle-box {
+        font-size: 1.2rem;
+
     }
 }
 /* Para ordenadores y pantallas grandes (a partir de 900px) */
@@ -214,4 +233,5 @@ h2 {
     .cards-grid {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adaptable automático */
     }
+}
 }

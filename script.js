@@ -1,9 +1,11 @@
 // Diccionario de traducciones
 const translations = {
+    
     en: {
         greeting: "Hi, I'm",
         role: "Junior Web Developer & Supply Chain Troubleshooter",
-        subtitle: "Bridging the gap between physical operations and digital solutions.",
+        subtitle_line1: "Bridging the gap between physical operations",
+        subtitle_line2: "and digital solutions.",
         about_title: "About Me",
         about_text: "Currently working as a Troubleshooter at Arvato Supply Chain in Gennep, I solve complex logistical problems under pressure. Now, I am bringing my analytical mindset to Web Development, looking for a Praktikum in Cologne starting February 2027.",
         projects_title: "Key Projects & Achievements",
@@ -18,7 +20,8 @@ const translations = {
     es: {
         greeting: "Hola, soy",
         role: "Desarrollador Web Junior y Especialista en Logística",
-        subtitle: "Conectando las operaciones físicas con soluciones digitales.",
+        subtitle_line1: "Conectando las operaciones físicas",
+        subtitle_line2: "con soluciones digitales.",
         about_title: "Sobre mí",
         about_text: "Actualmente trabajo como Troubleshooter en Arvato Supply Chain en Gennep, resolviendo problemas logísticos complejos bajo presión. Ahora, aporto mi mentalidad analítica al Desarrollo Web, buscando unas prácticas en Colonia a partir de febrero de 2027.",
         projects_title: "Proyectos y Logros Clave",
@@ -33,7 +36,8 @@ const translations = {
     de: {
         greeting: "Hallo, ich bin",
         role: "Junior Webentwickler & Supply Chain Troubleshooter",
-        subtitle: "Die Lücke zwischen physischen Abläufen und digitalen Lösungen schließen.",
+        subtitle_line1: "Die Lücke zwischen physischen Abläufen",
+        subtitle_line2: "und digitalen Lösungen schließen.",
         about_title: "Über mich",
         about_text: "Derzeit arbeite ich als Troubleshooter bei Arvato Supply Chain in Gennep und löse unter Druck komplexe logistische Probleme. Nun bringe ich meine analytische Denkweise in die Webentwicklung ein und suche ab Februar 2027 ein Praktikum in Köln.",
         projects_title: "Schlüsselprojekte & Erfolge",
