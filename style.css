@@ -60,16 +60,15 @@ h2 {
 }
 
 .typing-text {
-    font-size: 1.2rem;
+    font-size: 1rem; /* Ligeramente más pequeño para que quepa mejor en móviles */
     font-family: monospace;
     border-right: 2px solid var(--primary-color);
-    white-space: nowrap;
+    white-space: normal; /* CAMBIO CLAVE: Permite que el texto baje de línea en pantallas pequeñas */
     overflow: hidden;
-    width: fit-content;
-    margin: 0 auto;
-    animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+    margin: 10px auto 0 auto;
+    max-width: 100%;
+    animation: blink-caret .75s step-end infinite; /* Quitamos la animación de tipeo rígida en móvil para evitar tirones */
 }
-
 @keyframes typing {
     from { width: 0 }
     to { width: 100% }
@@ -193,17 +192,15 @@ h2 {
     right: 10px;
 }
 
-/* Para tablets y pantallas medianas (a partir de 600px) */
-@media (min-width: 600px) {
-    h1 {
-        font-size: 2.8rem;
-    }
-    
-    .cards-grid {
-        grid-template-columns: repeat(2, 1fr); /* Dos columnas en tablets */
+/* Para pantallas medianas y grandes (PCs y tablets), recuperamos la animación de escritura fluida */
+@media (min-width: 768px) {
+    .typing-text {
+        font-size: 1.2rem;
+        white-space: nowrap; /* En PC vuelve a ser una sola línea animada */
+        width: fit-content;
+        animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
     }
 }
-
 /* Para ordenadores y pantallas grandes (a partir de 900px) */
 @media (min-width: 900px) {
     header {
