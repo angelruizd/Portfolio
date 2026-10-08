@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Selector de Idiomas -->
+    <div class="lang-selector">
+        <button onclick="changeLanguage('en')">🇬🇧 EN</button>
+        <button onclick="changeLanguage('es')">🇪🇸 ES</button>
+        <button onclick="changeLanguage('de')">🇩🇪 DE</button>
+    </div>
+
+    <header>
+        <h1><span data-i18n="greeting">Hi, I'm</span> <span class="highlight">Ángel Domínguez Ruiz</span></h1>
+        <h2 data-i18n="role">Junior Web Developer & Supply Chain Troubleshooter</h2>
+        <p class="typing-text" data-i18n="subtitle">Bridging the gap between physical operations and digital solutions.</p>
+    </header>
+
+    <section id="about">
+        <h3 data-i18n="about_title">About Me</h3>
+        <p data-i18n="about_text">Currently working as a Troubleshooter at Arvato Supply Chain in Gennep, I solve complex logistical problems under pressure. Now, I am bringing my analytical mindset to Web Development, looking for a Praktikum in Cologne starting February 2027.</p>
+    </section>
+
+    <!-- La sección de tus proyectos (Cards) -->
+    <section id="achievements">
+        <h3>Key Projects & Achievements</h3>
+        <div class="cards-grid">
+            
+            <div class="card">
+                <h4>SAP EWM Optimization</h4>
+                <p>Designed a Volumetric Picking algorithm to prioritize heavy items. Projected to increase overall productivity by 25% and reduce systemic errors by 30%.</p>
+            </div>
+
+            <div class="card">
+                <h4>Java Proof of Concept</h4>
+                <p>Developed a functional PoC in Java to simulate SAP WMS decision-making, validating complex volumetric sorting and dynamic SKU grouping logic.</p>
+            </div>
+
+            <div class="card">
+                <h4>AI Readiness & ROI</h4>
+                <p>Optimized WOCR (Warehouse Order Creation Rules) to generate clean transactional data, preparing the logistics ecosystem for native AI integration (SAP Joule).</p>
+            </div>
+
+            <div class="card">
+                <h4>Mental Health Web App (TFG)</h4>
+                <p>Developed a scalable full-stack web application to connect users with psychologists in Spain, architected with a foundation for future international expansion.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h3 data-i18n="contact_title">Contact</h3>
+        <a href="mailto:angelruizd20@gmail.com" class="btn" data-i18n="btn_email">Email Me</a>
+        <a href="/DOCUMENT/CV_Ángel_Dominguez.pdf" class="btn btn-outline" data-i18n="btn_cv" target="_blank">Download CV</a>
+    </section>
+
+    <!-- Enlazamos nuestro archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
